@@ -7,6 +7,7 @@ public class UngDungDocSoThanhChu {
     Scanner scanner = new Scanner(System.in);
     System.out.println("Nhập số cần đọc: ");
     int read = scanner.nextInt();
+
     switch (read) {
       case 1 -> System.out.println("One");
       case 2 -> System.out.println("Two");
