@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 public class UngDungChuyenDoiTienTe {
   public static void main(String[] args) {
-    double VND, USD;
+    double VND;
+    double USD;
     final double rate = 26000;
     Scanner scanner = new Scanner(System.in);
     System.out.println("Enter USD: ");
