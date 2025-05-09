@@ -7,10 +7,19 @@ public class UngDungChuyenDoiTienTe {
     double USD;
     final double rate = 26000;
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Enter USD: ");
-    USD = scanner.nextDouble();
+    System.out.println("Nhập số tiền (USD): ");
 
-    VND = USD * rate;
-    System.out.println(VND);
+
+    if (scanner.hasNextInt()) {
+      USD = scanner.nextDouble();
+      if (USD > 0 && USD < 1000000000) {
+        VND = USD * rate;
+        System.out.println(VND + " VNĐ");
+      }else {
+        System.out.println("Số tiền phải từ 0 đến 1000000000");
+      }
+    }else {
+      System.out.println("Bạn phải nhập số!");
+    }
   }
 }
