@@ -6,13 +6,17 @@ import java.util.Scanner;
 public class PrimeNumbers {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    System.out.println("Nhập số cần kiểm tra: ");
+    System.out.println("Nhập số lượng số nguyên tố cần in: ");
     int numbers = input.nextInt();
-
-    if (isPrime(numbers)) {
-      System.out.println(numbers + " là số nguyên tố");
-    } else {
-      System.out.println(numbers + " không phải là số nguyên tố");
+    int count = 0;
+    int N = 2;
+    System.out.println(numbers + " số nguyên tố đầu tiên là:");
+    while (count < numbers) {
+      if (isPrime(N)) {
+        System.out.println(N);
+        count++;
+      }
+      N++;
     }
   }
 
@@ -20,7 +24,6 @@ public class PrimeNumbers {
     if (n < 2) {
       return false;
     }
-
     for (int i = 2; i <= Math.sqrt(n); i++) {
       if (n % i == 0) {
         return false;
