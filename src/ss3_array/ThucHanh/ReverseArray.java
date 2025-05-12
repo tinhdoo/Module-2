@@ -3,6 +3,7 @@ package ss3_array.ThucHanh;
 import java.util.Scanner;
 
 public class ReverseArray {
+  //Đảo ngược mảng
   public static void main(String[] args) {
     int size;
     int[] array;

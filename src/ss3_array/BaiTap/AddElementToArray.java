@@ -3,6 +3,7 @@ package ss3_array.BaiTap;
 import java.util.Scanner;
 
 public class AddElementToArray {
+  //Thêm phần tử vào mảng
   public static void main(String[] args) {
     int[] arr = {3,4,5,6,7,8};
     Scanner scanner = new Scanner(System.in);

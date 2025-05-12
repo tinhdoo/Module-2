@@ -3,6 +3,7 @@ package ss3_array.BaiTap;
 import java.util.Scanner;
 
 public class RemoveElementFromArray {
+  // Xoá phẩn tử khỏi mảng
   public static void main(String[] args) {
     int[] array = {3, 4, 5, 6, 6};
     Scanner scanner = new Scanner(System.in);
