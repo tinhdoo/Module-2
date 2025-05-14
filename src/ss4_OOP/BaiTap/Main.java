@@ -1,24 +1,16 @@
 package ss4_OOP.BaiTap;
 
-import ss4_OOP.BaiTap.QuadraticEquation;
-
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Nhập a: ");
-        double a = scanner.nextDouble();
-
-        System.out.print("Nhập b: ");
-        double b = scanner.nextDouble();
-
-        System.out.print("Nhập c: ");
-        double c = scanner.nextDouble();
+        double a = inputDouble(scanner, "Nhập a (khác 0): ", true);
+        double b = inputDouble(scanner, "Nhập b: ", false);
+        double c = inputDouble(scanner, "Nhập c: ", false);
 
         QuadraticEquation equation = new QuadraticEquation(a, b, c);
-
         double delta = equation.getDiscriminant();
 
         if (delta > 0) {
@@ -31,5 +23,24 @@ public class Main {
         } else {
             System.out.println("Phương trình vô nghiệm.");
         }
+    }
+
+    public static double inputDouble(Scanner scanner, String message, boolean mustNonZero) {
+        double value;
+        while (true) {
+            System.out.print(message);
+            if (scanner.hasNextDouble()) {
+                value = scanner.nextDouble();
+                if (mustNonZero && value == 0) {
+                    System.out.println("Giá trị phải khác 0. Vui lòng nhập lại.");
+                } else {
+                    break;
+                }
+            } else {
+                System.out.println("Vui lòng nhập số hợp lệ!");
+                scanner.next();
+            }
+        }
+        return value;
     }
 }
