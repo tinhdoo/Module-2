@@ -7,12 +7,13 @@ public class Count {
     String[] str = {"c", "o", "d", "e"};
 
     Scanner scanner = new Scanner(System.in);
+    System.out.println("Nhập ký tự cần kiểm tra: ");
     String var = scanner.next();
 
     int count = 0;
-    for (int i = 0; i < str.length;i++){
-      if (var.equals(str[i])){
-       count++;
+    for (String s : str) {
+      if (var.equals(s)) {
+        count++;
       }
     }
     System.out.println("Số lần xuất hiện của \"" + var + "\": " + count);
