@@ -6,8 +6,9 @@ public class Student {
 
     public Student() {
         this.name = "john";
-        this.classes ="C02";
+        this.classes = "C02";
     }
+
     public void setClasses(String classes) {
         this.classes = classes;
     }
@@ -16,11 +17,7 @@ public class Student {
         this.name = name;
     }
 
-    public String getName(){
-        return name;
+    public void display() {
+        System.out.println("Tên: " + name + " --- " + "Lớp: " + classes);
     }
-    public String getClasses(){
-        return classes;
-    }
-
 }
