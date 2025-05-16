@@ -1,4 +1,7 @@
-package ss6_inherit.BaiTap;
+package ss6_inherit.BaiTap.CircleAndCylinder;
+
+import ss6_inherit.BaiTap.CircleAndCylinder.Circle;
+import ss6_inherit.BaiTap.CircleAndCylinder.Cylinder;
 
 public class MainCircle{
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ss6_inherit.BaiTap;
+package ss6_inherit.BaiTap.CircleAndCylinder;
 
 public class Circle {
     public double radius;

@@ -1,4 +1,6 @@
-package ss6_inherit.BaiTap;
+package ss6_inherit.BaiTap.CircleAndCylinder;
+
+import ss6_inherit.BaiTap.CircleAndCylinder.Circle;
 
 public class Cylinder extends Circle {
     private double height;
@@ -20,9 +22,7 @@ public class Cylinder extends Circle {
     }
 
     public double getVolume(){
-        return getArea()* height;// goi ham la duoc
-    }
-    // để in ít hon phía sau thi chỗ toString lam vậy nè
+        return getArea()* height;}
     @Override
     public String toString() {
         return "Cylinder" +
