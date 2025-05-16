@@ -2,8 +2,6 @@ package ss6_inherit.BaiTap.Point2DAnd3D;
 
 public class Point3D extends Point2D {
     public float z = 0.0f;
-
-
     @Override
     public float getX() {
         return super.getX();
@@ -19,10 +17,6 @@ public class Point3D extends Point2D {
         this.z = z;
     }
 
-    public Point3D() {
-
-    }
-
     public float getZ() {
         return z;
     }
@@ -31,20 +25,22 @@ public class Point3D extends Point2D {
         this.z = z;
     }
 
-    public void setXY(float x, float y, float z) {
-
+    public void setXYZ(float x, float y, float z) {
+        setX(x);
+        setY(y);
+        this.z = z;
     }
 
     public float[] getXYZ() {
-        return new float[]{x, y, z};
+        return new float[]{getX(),getY(), z};
     }
 
     @Override
     public String toString() {
         return "Point3D{" +
-                "z=" + z +
-                ", x=" + x +
-                ", y=" + y +
+                " x=" + getX() +
+                ", y=" + getY() +
+                ", z=" + z +
                 '}';
     }
 }
