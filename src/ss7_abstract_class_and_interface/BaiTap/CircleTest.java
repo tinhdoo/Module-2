@@ -1,4 +1,4 @@
-package ss7_Abstract_class_and_Interface.BaiTap;
+package ss7_abstract_class_and_interface.BaiTap;
 
 public class CircleTest {
     public static void main(String[] args) {

@@ -1,10 +1,14 @@
-package ss7_Abstract_class_and_Interface.BaiTap;
+package ss7_abstract_class_and_interface.BaiTap;
 
 public class Circle extends Shape implements Resizeable {
     private double radius = 1.0;
     @Override
     public void resize(double percent) {
         this.radius += this.radius * percent / 100;
+    }
+
+    public void howToColor() {
+
     }
 
 

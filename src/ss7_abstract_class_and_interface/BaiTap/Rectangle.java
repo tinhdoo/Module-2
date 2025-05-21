@@ -1,4 +1,4 @@
-package ss7_Abstract_class_and_Interface.BaiTap;
+package ss7_abstract_class_and_interface.BaiTap;
 
 public class Rectangle extends Shape implements Resizeable {
     private double width = 1.0;
@@ -9,6 +9,11 @@ public class Rectangle extends Shape implements Resizeable {
             width += width * percent / 100;
             length += length * percent / 100;
         }
+
+/*    @Override
+    public void howToColor() {
+
+    }*/
 
 
     public Rectangle() {

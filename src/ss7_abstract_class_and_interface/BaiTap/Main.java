@@ -1,4 +1,4 @@
-package ss7_Abstract_class_and_Interface.BaiTap;
+package ss7_abstract_class_and_interface.BaiTap;
 
 import java.util.Random;
 
@@ -36,6 +36,9 @@ public class Main {
                 after = ((Square) shape).getArea();
             }
             System.out.printf("After resize: %.2f\n\n", after);
+
         }
+
     }
+
 }
