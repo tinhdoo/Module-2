@@ -1,7 +1,6 @@
-/*
 package ss9_java_collection_framework.BaiTap.arrayList;
 
-public class MyList {
+public class MyList <E> {
     private int size = 0;
     static final int DEFAUL_CAPACITY = 10;
     Object elements [];
@@ -20,4 +19,3 @@ public class MyList {
     }
 
 }
-*/

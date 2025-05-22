@@ -1,6 +1,6 @@
 package ss7_abstract_class_and_interface.BaiTap;
 
-public class Square extends Rectangle implements Resizeable {
+public class Square extends Rectangle implements Resizeable, Colorable {
     public Square() {
         super();
     }
@@ -56,4 +56,9 @@ public class Square extends Rectangle implements Resizeable {
                 ", area=" + getArea() +
                 ", which is a subclass of " + super.toString();
     }
+    @Override
+    public void howToColor() {
+        System.out.println("Color all four sides.");
+    }
+
 }
