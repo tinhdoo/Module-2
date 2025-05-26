@@ -1,4 +1,4 @@
-package ss9_java_collection_framework.BaiTap.arrayList;
+package ss9_TDD.BaiTap.arrayList;
 
 public class MyList <E> {
     private int size = 0;

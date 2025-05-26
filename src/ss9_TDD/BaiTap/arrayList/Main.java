@@ -1,6 +1,4 @@
-package ss9_java_collection_framework.BaiTap.arrayList;
-
-import java.util.List;
+package ss9_TDD.BaiTap.arrayList;
 
 public class Main {
     public static void main(String[] args) {
