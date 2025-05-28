@@ -17,6 +17,20 @@ public class InsertionSort {
         }
     }
 
+    public static void insertionSort(int [] list){
+        for (int i = 1; i < list.length; i++) {
+            int currentElement = list[i];
+            int j = i - 1;
+
+            while (j >= 0 && list[j] > currentElement) {
+                list[j + 1] = list[j];
+                j--;
+            }
+
+            list[j + 1] = currentElement;
+        }
+    }
+
     public static void printArray(int[] a) {
         for (int value : a) {
             System.out.print(value + " ");
