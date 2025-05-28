@@ -6,16 +6,18 @@ public class BinarySearch {
     }
 
     public int binarySearch(int[] array, int left, int right, int value) {
-        while (left <= right) {
-            int mid = (left + right) / 2;
-            if (array[mid] == value) {
-                return mid;
-            } else if (array[mid] > value) {
-                right = mid - 1;
-            } else {
-                left = mid + 1;
-            }
+        if (left > right) {
+            return -1;
         }
-        return -1;
-}
+
+        int mid = (left + right) / 2;
+
+        if (array[mid] == value) {
+            return mid;
+        } else if (array[mid] > value) {
+            return binarySearch(array, left, mid - 1, value);
+        } else {
+            return binarySearch(array, mid + 1, right, value);
+        }
+    }
 }
