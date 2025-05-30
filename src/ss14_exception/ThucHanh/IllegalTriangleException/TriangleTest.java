@@ -1,5 +1,6 @@
 package ss14_exception.ThucHanh.IllegalTriangleException;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class TriangleTest {
@@ -19,7 +20,7 @@ public class TriangleTest {
             System.out.println("Hợp lệ: Đây là một tam giác.");
         } catch (IllegalTriangleException e) {
             System.out.println("Lỗi: " + e.getMessage());
-        } catch (Exception e) {
+        } catch (InputMismatchException e) {
             System.out.println("Vui lòng nhập số hợp lệ.");
         }
     }
