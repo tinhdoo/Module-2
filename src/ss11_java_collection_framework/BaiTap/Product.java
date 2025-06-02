@@ -1,6 +1,8 @@
 package ss11_java_collection_framework.BaiTap;
 
-public class Product {
+import ss16_binary_file_serialization.BaiTap.ManageProducts.model.Products;
+
+public class Product extends Products {
     private int id;
     private String name;
     private double price;
@@ -9,6 +11,9 @@ public class Product {
         this.id = id;
         this.name = name;
         this.price = price;
+    }
+
+    public Product(int id, String name, double price, String manufacturer, String description) {
     }
 
     public int getId() {
@@ -27,9 +32,6 @@ public class Product {
         this.name = name;
     }
 
-    public double getPrice() {
-        return price;
-    }
 
     public void setPrice(double price) {
         this.price = price;

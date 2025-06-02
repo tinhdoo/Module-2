@@ -1,4 +1,4 @@
-package ss14_exception.ThucHanh.IllegalTriangleException;
+package ss14_exception.BaiTap.IllegalTriangleException;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package ss14_exception.ThucHanh.NumberFormatException;
+package ss14_exception.BaiTap.NumberFormatException;
 
 import java.util.Scanner;
 

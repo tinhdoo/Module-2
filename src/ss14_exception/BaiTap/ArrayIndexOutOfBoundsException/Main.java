@@ -1,4 +1,4 @@
-package ss14_exception.ThucHanh.ArrayIndexOutOfBoundsException;
+package ss14_exception.BaiTap.ArrayIndexOutOfBoundsException;
 
 import java.util.Scanner;
 
